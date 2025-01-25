@@ -2,14 +2,16 @@
 
 Este é um aplicativo simples criado com **Python** e **Tkinter** para ajudar a organizar postagens no Trello, especialmente útil para quem trabalha com redes sociais. O objetivo é facilitar o gerenciamento de eventos e postagens, permitindo criar cartões no Trello com base em dias da semana e textos personalizados.
 
-A aplicação cria listas no Trello com o nome dos meses e do ano (o ano selecionado na interface), e, ao marcar um dia da semana, gera um cartão correspondente ao dia da semana (por exemplo: "01.qua| texto"). Se um texto for adicionado para um dia específico, ele será incluído no cartão.
+A aplicação cria listas no Trello com o nome dos meses e do ano (o ano selecionado na interface), e, ao marcar um dia da semana, gera um cartão correspondente ao dia da semana (por exemplo: "01.qua | texto"). Se um texto for adicionado para um dia específico, ele será incluído no cartão.
 
 ## Funcionalidades
 
 - **Criação automática de listas**: Cria listas com os nomes dos meses e o ano, conforme selecionado na interface.
-- **Cartões de dias da semana**: Para cada dia da semana marcado, cria um cartão com o formato `(dd.dia| texto)`, onde `texto` é o texto inserido pelo usuário.
+- **Cartões de dias da semana**: Para cada dia da semana marcado, cria um cartão com o formato `(dd.dia | texto)`, onde `texto` é o texto inserido pelo usuário.
+- **Seleção de meses**: O usuário pode selecionar os meses para os quais deseja gerar postagens. Isso permite flexibilidade no planejamento.
 - **Armazenamento de configurações**: A aplicação armazena a **Key**, **Token** e **Board ID** do Trello, facilitando a automação de postagens no quadro do Trello.
-- **Interface gráfica**: Interface simples e intuitiva usando o Tkinter, permitindo que o usuário configure facilmente o ano, dias da semana e textos.
+- **Personalização de cores**: Cada semana pode ser associada a uma cor diferente, tornando a visualização dos cartões mais intuitiva e colorida.
+- **Interface gráfica**: Interface simples e intuitiva usando o Tkinter, permitindo que o usuário configure facilmente o ano, dias da semana, textos e selecione os meses para gerar postagens.
 
 ## Requisitos
 
@@ -31,7 +33,7 @@ A aplicação cria listas no Trello com o nome dos meses e do ano (o ano selecio
 
 ### Primeiros Passos
 
-1. **Configuração do Trello**: 
+1. **Configuração do Trello**:
    - Quando o aplicativo for aberto pela primeira vez, insira sua **Key**, **Token** e **Board ID** do Trello nas caixas de entrada. Essas informações podem ser obtidas nas configurações da sua conta do Trello.
    - Clique em **Salvar Configurações** para salvar essas informações localmente.
 
@@ -49,11 +51,17 @@ A aplicação cria listas no Trello com o nome dos meses e do ano (o ano selecio
    - Marque os dias da semana para os quais você deseja gerar postagens.
    - Para cada dia marcado, o aplicativo criará um cartão correspondente no Trello.
 
-4. **Inserir Textos**:
-   - Para cada dia da semana, você pode inserir um texto que será adicionado ao cartão. Por exemplo, se você adicionar "Texto de exemplo" para a segunda-feira, o cartão gerado será: `01.seg| Texto de exemplo`.
+4. **Seleção de Meses**:
+   - Selecione os meses para os quais você deseja gerar postagens. Isso permitirá personalizar a criação dos cartões conforme o planejamento de conteúdo.
 
-5. **Gerar Postagens**:
-   - Após configurar os dias e textos, clique em **Gerar Postagens** para criar os cartões automaticamente no Trello.
+5. **Inserir Textos**:
+   - Para cada dia da semana, você pode inserir um texto que será adicionado ao cartão. Por exemplo, se você adicionar "Texto de exemplo" para a segunda-feira, o cartão gerado será: `01.seg | Texto de exemplo`.
+
+6. **Escolher Cores para as Semanas**:
+   - Cada semana pode ser associada a uma cor diferente. Escolha as cores desejadas para facilitar a visualização no Trello.
+   
+7. **Gerar Postagens**:
+   - Após configurar os dias, meses, textos e cores, clique em **Gerar Postagens** para criar os cartões automaticamente no Trello.
 
 ### Arquivo de Configuração
 

@@ -3,3 +3,6 @@ AUTO TRELO V1.rar
 __pycache__/
 dados.txt
 config.txt
+dist/
+build/
+main.spec
